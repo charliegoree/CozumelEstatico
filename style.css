@@ -1,0 +1,519 @@
+/*
+	Theme Name: Cozumel Theme
+	Theme URI: 
+	Description: tema para gym
+	Version: 1.0.0
+	Author: GrrCodebar (@grrcodebar)
+	Author URI: --
+	Tags: HTML5, CSS3
+
+	License: MIT
+	License URI: http://opensource.org/licenses/mit-license.php
+*/
+
+@font-face {
+font-family: "regular";
+src: url("Fuentes/BwGlennSans-Regular.otf");
+font-weight: regular;
+}
+@font-face {
+font-family: "bold";
+src: url("Fuentes/BwGlennSans-Bold.otf");
+font-weight: bold;
+}
+@font-face {
+font-family: "Hairline";
+src: url("Fuentes/BwGlennSans-Hairline.otf");
+font-weight: Hairline;
+}
+/*
+src: url("Fuentes/BwGlennSans-Black.otf");
+src: url("Fuentes/BwGlennSans-BlackItalic.otf");
+
+src: url("Fuentes/BwGlennSans-BoldItalic.otf");
+src: url("Fuentes/BwGlennSans-ExtraBoldItalic.otf");
+
+src: url("Fuentes/BwGlennSans-HairlineItalic.otf");
+src: url("Fuentes/BwGlennSans-Light.otf");
+src: url("Fuentes/BwGlennSans-LightItalic.otf");
+src: url("Fuentes/BwGlennSans-Medium.otf");
+src: url("Fuentes/BwGlennSans-MediumItalic.otf");
+src: url("Fuentes/BwGlennSans-Regular.otf");
+src: url("Fuentes/BwGlennSans-RegularItalic.otf");
+src: url("Fuentes/BwGlennSans-Thin.otf");
+src: url("Fuentes/BwGlennSans-ThinItalic.otf");
+*/
+html{
+	max-width: 100vw !important;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+body{
+	font-family: "regular";
+	box-sizing: border-box;
+	width: 100vw;
+	max-width: 100vw;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	--rojo:#FF282E;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+a.active{
+	text-transform: uppercase;
+	color: var(--rojo);
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: "bold";
+}
+.contenedor{
+
+}
+.header{
+	top: 0;
+	position: absolute;
+	padding: 2rem 4rem;
+	width: 100%;
+	max-width: 100vw;
+	height: 8rem;
+	background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo{
+	width: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.logo-img{
+	height: 7rem;
+	margin: 1rem;
+}
+.menu{
+	margin: 0;
+	padding: 0;
+	color: white;
+}
+
+.menu > ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.menu > ul > li{
+	margin: .5rem;
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.principal{
+	box-sizing: border-box;
+	background: url("Imagenes/Mask Group 75.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	max-width: 100vw;
+	height: calc(100vh);
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.mensaje-principal{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.scroll-down{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 0.5rem; 
+}
+.segundo{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+.segundo > .parte{
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.segundo > .parte > img{
+	width: 100%;
+}
+.tercero {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.tercero > .parte {
+	height: 50%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+.tercero > .parte > .botonera{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.tercero > .parte > .botonera > .boton{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	margin: 1rem;
+	height: 12rem;
+	width: 12rem;
+	background:black;
+}
+.tercero > .parte > .botonera > .bal{
+	background: url("Imagenes/Group 1627.png");
+	background-size: cover;
+	background-position: center;
+}
+.tercero > .parte > .botonera > .ser{
+	background: url("Imagenes/Group 1628.png");
+	background-size: cover;
+	background-position: center;
+}
+.tercero > .parte > .botonera > .res{
+	background: url("Imagenes/Group 1629.png");
+	background-size: cover;
+	background-position: center;
+}
+.tercero > .parte > img{
+	width: 100%;
+}
+.galeria{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.galeria > .cuadros{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.galeria > .cuadros > img{
+	height: 12rem;
+	width: 12rem;
+	margin: 1rem;
+	cursor: pointer;
+}
+#modal{
+	display: none;
+	position: fixed;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	z-index: 30;
+	top: 0;
+	left: 0;
+	min-height: 100vh;
+	min-width: 100vw;
+	padding: 3rem;
+	background: rgba(0,0,0,.5);
+	color: white;
+}
+#modal > img{
+	width: auto;
+	height: 70vh;
+	width: auto;
+	margin: 1rem;
+}
+#cerrar-modal{
+	width: 3rem;
+	height: 3rem;
+	cursor: pointer;
+	align-self: flex-end;
+}
+.contacto{
+	width: 100vw;
+	height: 100vh;
+	background: url("Imagenes/Group 1602.png");
+	background-size: cover;
+	background-position: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+}
+.contacto > form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100vw;
+}
+.contacto > form > .fila{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: center;
+	width: 30rem;
+}
+.contacto > form > .fila-doble{
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+	justify-content: center;
+	width: 30rem;
+}
+.contacto > form > .fila > input{
+	width: 100%;
+}
+
+.footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	width: 100vw;
+	height: 20rem;
+	background:var(--rojo);
+}
+.contenedor-footer{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: space-between;
+}
+.contenedor-footer > .contenedor-footer{
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	margin: 2rem;
+}
+.contenedor-footer > .contenedor-footer > ul{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-around;
+}
+.contenedor-footer > .contenedor-footer > ul > li{
+	margin-top: .5rem;
+}
+.doble{
+}
+.mini{
+	font-weight: 200;
+	font-size: .7rem;
+}
+.titulo-footer{
+	border-bottom: solid 2px white;
+}
+.copyright{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	border-top: solid 2px white;
+	width: 90%;
+	padding: 2rem;
+}
+#mensaje{
+	width: 30rem;
+	height: 10rem;
+	resize: none;
+}
+/* FORMULARIO */
+
+input,
+textarea,
+select 
+{
+	padding: 1rem;
+	margin: 0;
+	outline: none;
+	border: none;
+	border: 2px solid white;
+	color: white;
+	background: transparent;
+	border-radius: .5rem;
+	margin: .5rem;
+}
+input:focus,
+textarea:focus,
+select:focus
+{
+	background:white;
+	color: black;
+}
+input[type=checkbox] {
+   position: absolute;
+   top: -9999px;
+   left: -9999px;
+   /* For mobile, it's typically better to position checkbox on top of clickable
+      area and turn opacity to 0 instead. */
+}
+button,input [type="submit"]{
+	background-color:var(--rojo);
+	cursor:pointer;
+	color:white;
+	padding:.5rem 5rem;
+	margin: 1rem;
+	text-decoration:none;
+	border-radius: .5rem;
+	border: none;
+}
+button:hover,input [type="submit"]:hover{
+	text-shadow:0px 8px 5px black;
+}
+button:active,input [type="submit"]:active{
+	text-shadow:0px 1px 5px black;
+}
+
+
+/*responsive menu*/
+.menu > label{
+	font-size: 3rem;
+	display: none;
+}
+
+/*celular*/
+@media only screen and (max-width: 740px) {
+
+.segundo > .parte > img{
+	overflow: hidden;
+	width: auto;
+	height: 100%;
+}
+.tercero > .parte > img{
+	overflow: hidden;
+	width: auto;
+	height: 100%;
+}
+.tercero > .parte > .botonera{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.tercero > .parte > .botonera > .boton{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	margin: .5rem;
+	height: 6rem;
+	width: 6rem;
+	font-size: .5rem;
+}
+
+.menu > label{
+	display: block;
+	cursor: pointer;
+	z-index: 20;
+}
+.menu > label > .fa-bars{
+	display: block;
+}
+.menu > label > .fa-chevron-left{
+	display: none;
+}
+input[type=checkbox].menu-btn:checked ~ ul#menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+input[type=checkbox].menu-btn:checked + label > .fa-bars {
+	display: none
+}
+input[type=checkbox].menu-btn:checked + label > .fa-chevron-left {
+	display: block
+}
+.menu > ul{
+	position: absolute;
+	top: 0;
+	left: -70vw;
+	background: white;
+	color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	width: 70vw;
+	z-index: 10;
+	transition: left 1s;
+}
+.menu > ul > li{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+}
+.menu > ul > li > a{
+	color: black;
+}
+.menu > ul > li > a.active{
+	color: var(--rojo);
+}
+.galeria{
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.galeria > .cuadros{
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+	width: 90vw;
+	height: 80vh;
+}
+.galeria > .cuadros > img{
+	height: 25vw;
+	width: 25vw;
+	margin: .5rem;
+	cursor: pointer;
+}
+.contacto > form{
+	width: 90vw;
+}
+.contacto > form > .fila{
+	width: 80vw;
+}
+}

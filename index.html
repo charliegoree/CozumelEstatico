@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<title>Cozumel</title>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="normalize.min.css">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Ropa+Sans" rel="stylesheet"> 
+        <script type="text/javascript" src="javascript/script.js"></script>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Demo Estatica Cozumel">
+</head>
+<body>
+	<div class="contenedor">
+		<header class="header">
+			<div class="logo"><a href="<?php echo home_url(); ?>"><img src="Imagenes/logo.png" alt="Logo" class="logo-img"></a></div>
+			<div class="header-blanco"></div>
+			<nav class="menu" role="navigation">
+				<input class="menu-btn" type="checkbox" id="menu-btn" />
+				<label for="menu-btn">
+					<i class="fas fa-bars"></i>
+					<i class="fas fa-chevron-left"></i>
+				</label>
+				<ul id="menu">
+					<li><a href="#home" id="boton1" class="active">Home</a></li>
+					<li><a href="#sombrayarena" id="boton2">Sombra y Arena</a></li>
+					<li><a href="#maryplaya" id="boton3">Mar y Playa</a></li>
+					<li><a href="#contacto" id="boton4">Contacto</a></li>
+				</ul>
+			</nav>
+		</header>
+		<section class="principal" id="home">
+	<div class="mensaje-principal">
+		<img src="Imagenes/Group 1626.png">
+		<p>Desde 1977, para vivir la playa y el mar.</p>
+		<div class="scroll-down">
+			<p>scroll&ensp;</p>
+			<img src="Imagenes/Group 1630.png">
+			<p>&ensp;down</p>
+		</div>
+	</div>
+</section>
+<section class="segundo">
+	<div class="parte">
+		<h1>COZUMEL CARILO</h1>
+		<p>El disfrute esta en nuestra playa, en la arena y<br> el encuentro con el agua y el mar.</p>
+		<h2><b>Bienvenido!</b></h2>
+	</div>
+	<div class="parte">
+		<img src="Imagenes/Mask Group 76.png">
+	</div>
+</section>
+<section class="tercero" id="sombrayarena">
+	<div class="parte">
+		<h1>SOMBRA Y ARENA</h1>
+		<div class="botonera">
+			<a href="#home" class="boton bal"><h2>BALNEAREO</h2></a>
+			<a href="#home" class="boton ser"><h2>SERVICIOS</h2></a>
+			<a href="#home" class="boton res"><h2>RESTAURANTE</h2></a>
+		</div>
+	</div>
+	<div class="parte">
+		<img src="Imagenes/Mask Group 77.png">
+	</div>
+</section>
+<section class="galeria" id="maryplaya">
+	<div id="modal">
+		<span id="cerrar-modal" onclick="cerrarModal()"><i class="fas fa-times"></i></span>
+		<img class="img-modal" id="img01">
+		<div id="texto-modal"></div>
+	</div>
+	<h1>MAR Y PLAYA</h1>
+	<div class="cuadros">
+		<img onclick="abrirModal(this)"
+		 src="Imagenes/Mask Group 70.png"
+		 alt="Descripcion imagen 1">
+		<img onclick="abrirModal(this)" 
+		 src="Imagenes/Mask Group 70.png" 
+		 alt="Descripcion imagen 2">
+		<img onclick="abrirModal(this)"
+		 src="Imagenes/Mask Group 70.png"
+		 alt="Descripcion imagen 3">
+	</div>
+	<div class="cuadros">
+		<img onclick="abrirModal(this)"
+		 src="Imagenes/Mask Group 70.png" 
+		 alt="Descripcion imagen 4">
+		<img onclick="abrirModal(this)"
+		 src="Imagenes/Mask Group 70.png"
+		  alt="Descripcion imagen 5">
+		<img onclick="abrirModal(this)"
+		 src="Imagenes/Mask Group 70.png"
+		  alt="Descripcion imagen 6">
+	</div>
+</section>
+<section class="contacto" id="contacto">
+	<h1>NUESTROS CONTACTOS</h1>
+	<form>
+		<div class="fila-doble">
+			<input type="text" name="nombre" id="nombre" placeholder="nombre">
+			<input type="text" name="apellido" id="apellido" placeholder="apellido">
+		</div>
+		<div class="fila">
+			<input type="text" name="email" id="email" placeholder="e-mail">
+		</div>
+		<div class="fila">
+			<textarea name="mensaje" id="mensaje" placeholder="mensaje"></textarea>
+		</div>
+		<div class="fila">
+			<button>Enviar Mensaje</button>
+		</div>
+	</form>
+</section>
+<footer class="footer" role="contentinfo">
+					<div class="contenedor-footer">
+						<div class="contenedor-footer">
+							<h1 class="titulo-footer">Navegacion</h1>
+							<ul>
+								<li>
+									<a href="#home">Home</a>
+								</li>
+								<li>
+									<a href="#sombrayarena">Sombra y Arena</a>
+								</li>
+								<li>	
+									<a href="#maryplaya">Mar y Playa</a>
+								</li>
+								<li>
+									<a href="#contacto">Contacto</a>
+								</li>
+							</ul>
+						</div>
+						<div class="contenedor-footer">
+							<h1 class="titulo-footer">Encontranos en:</h1>
+							<ul>
+								<li>
+									<i class="fas fa-map-marker-alt"></i>&ensp;CARILO, BUENOS AIRES
+								</li>
+								<li class="doble">
+									<p><i class="far fa-dot-circle"></i>&ensp;BAR Y RESTAURANTE</p>
+									<p class="mini">&ensp;&ensp;02267-536727 - 02254-407409</p>
+								</li>
+								<li class="doble">
+									<p><i class="far fa-dot-circle"></i>&ensp;CARPAS Y SOMBRILLAS</p>
+									<p class="mini">&ensp;&ensp;02267-445631 - 470762</p>
+								</li>
+							</ul>
+						</div>
+						<div class="contenedor-footer">
+							<h1 class="titulo-footer">Contactate a:</h1>
+							<ul>
+								<li>
+									<i class="far fa-dot-circle"></i>&ensp;info@cozumelcarilo.com.ar
+								</li>
+								<li class="doble">
+									<p><i class="far fa-dot-circle"></i>&ensp;RESTAURANTE</p>
+									<p class="mini">&ensp;&ensp;barcozumel.carilo@gmail.com</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- copyright -->
+					<p class="copyright">
+						2019 powered by LUKE
+					</p>
+					<!-- /copyright -->
+
+				</footer>
+				<!-- /footer -->
+
+			</div>
+		</div>
+	</body>
+</html>
